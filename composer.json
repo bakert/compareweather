@@ -1,0 +1,29 @@
+{
+    "name": "bakert/compareweather",
+    "description": "Minimalist web app to compare the weather in two places.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Thomas David Baker",
+            "email": "bakert@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "repositories": [
+        {
+            "type": "package",
+            "package": {
+                "name": "darkskyapp/skycons",
+                "version": "master",
+                "source": {
+                    "url": "git://github.com/darkskyapp/skycons.git",
+                    "type": "git",
+                    "reference": "master"
+                }
+            }
+        }
+    ],
+    "require": {
+        "darkskyapp/skycons": "master"
+    }
+}
