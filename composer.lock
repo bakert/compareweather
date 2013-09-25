@@ -3,18 +3,18 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "c44c76688333dd099f78ba03816ad030",
+    "hash": "22ba7f7850e89c8ce6e23c1f4d3bc64c",
     "packages": [
         {
-            "name": "darkskyapp/skycons",
+            "name": "bakert/geocoder",
             "version": "master",
             "source": {
                 "type": "git",
-                "url": "git://github.com/darkskyapp/skycons.git",
+                "url": "git://github.com/bakert/geocoder.git",
                 "reference": "master"
             },
             "type": "library",
-            "time": "2013-04-02 16:24:54"
+            "time": "2013-09-18 17:47:11"
         }
     ],
     "packages-dev": [

@@ -13,10 +13,10 @@
         {
             "type": "package",
             "package": {
-                "name": "darkskyapp/skycons",
+                "name": "bakert/geocoder",
                 "version": "master",
                 "source": {
-                    "url": "git://github.com/darkskyapp/skycons.git",
+                    "url": "git://github.com/bakert/geocoder.git",
                     "type": "git",
                     "reference": "master"
                 }
@@ -24,6 +24,7 @@
         }
     ],
     "require": {
-        "darkskyapp/skycons": "master"
+        "bakert/geocoder": "master"
     }
 }
+
