@@ -1,2 +1,13 @@
-apiKey = <APIKEY>
-
+forecast.io.api.key = 8ae8db93c10d9dc8b9740c19c4f4ffcd
+database.type = mysql
+database.host = 127.0.0.1
+database.name = compareweather
+database.username = compareweather
+database.password = <PASSWORD>
+first.city.name = London
+first.city.latitude = 51.3849401
+first.city.longitude = -0.3514683
+second.city.name = Palo Alto
+second.city.latitude = 37.4418834
+second.city.longitude = -122.1430195
+start.date = 2013-10-09
