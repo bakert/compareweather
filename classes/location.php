@@ -6,6 +6,13 @@ require_once __DIR__ . '/../classes/weather.php';
 
 class Location {
 
+    public static function init() {
+        return [
+            new Location(Config::firstCityName(), Config::firstCityLatitude(), Config::firstCityLongitude()),
+            new Location(Config::secondCityName(), Config::secondCityLatitude(), Config::secondCityLongitude()),
+        ];
+    }
+
     public function __construct($name, $latitude, $longitude) {
         $this->name       = $name;
         $this->latitude   = $latitude;
