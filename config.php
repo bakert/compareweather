@@ -8,7 +8,7 @@ class Config {
     protected static $config;
 
     protected static function init() {
-        $path = dirname(__FILE__) . '/' . static::CONFIG_FILE;
+        $path = __DIR__ . '/' . static::CONFIG_FILE;
         if (!file_exists($path)) {
             throw new Exception('Configuration file not found at ' . $path);
         }
