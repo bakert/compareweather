@@ -1,31 +1,24 @@
 <?php
 
-require_once(dirname(__FILE__) . '/../compareweather.php');
-
 /*
  * Interface to api.forecast.io weather service.
  *
- * Usage:
- *
- *     $forecast = new Forecast();
- *     $forecast->forecast($lat, $lng, $time);
- *
  * See: https://developer.forecast.io/docs/v2
  */
-class Forecast {
+class ForecastIo {
 
     public function __construct() {
-        $this->apiKey = Config::apiKey();
+        $this->apiKey = Config::forecastIoApiKey();
     }
 
-    public function forecast($lat, $lng, $time = null) {
+    public function get($location, $time = null) {
         $url = 'http://api.forecast.io/forecast/' . rawurlencode($this->apiKey) . '/';
-        $url .= rawurlencode($lat) . ',' . rawurlencode($lng);
+        $url .= rawurlencode($location->latitude()) . ',' . rawurlencode($location->longitude());
         if ($time) {
             $url .= ',' . rawurlencode($time);
         }
+        $url .= '?units=si&exclude=currently,minutely,hourly,alerts,flags';
         $responseBody = file_get_contents($url);
-        print_r($responseBody);
+        return json_decode($responseBody, true);
     }
 }
-
