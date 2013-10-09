@@ -1,6 +1,6 @@
 <?php
 
-require_once(__DIR__ . '/../classes/templateengine.php');
+require_once __DIR__ . '/../classes/templateengine.php';
 
 class Comparison {
 

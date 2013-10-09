@@ -1,8 +1,8 @@
 <?php
 
-require_once(__DIR__ . '/../classes/forecastio.php');
-require_once(__DIR__ . '/../classes/store.php');
-require_once(__DIR__ . '/../classes/weather.php');
+require_once __DIR__ . '/../classes/forecastio.php';
+require_once __DIR__ . '/../classes/store.php';
+require_once __DIR__ . '/../classes/weather.php';
 
 class Location {
 
