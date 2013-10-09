@@ -3,7 +3,7 @@ CREATE DATABASE compareweather;
 
 USE compareweather;
 
-GRANT ALL ON compareweather.* TO compareweather@localhost IDENTIFIED BY '<PASSWORD>';
+GRANT ALL ON compareweather.* TO compareweather@localhost IDENTIFIED BY 'PASSWORD';
 
 CREATE TABLE weather (
     weather_id INT PRIMARY KEY AUTO_INCREMENT UNIQUE NOT NULL,
