@@ -3,19 +3,8 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "c9efeeb9a2c0f0d7bb7bde6e15f1fe99",
+    "hash": "47f9dbfc39335afd1eb416b04ff4fc8e",
     "packages": [
-        {
-            "name": "bakert/geocoder",
-            "version": "master",
-            "source": {
-                "type": "git",
-                "url": "git://github.com/bakert/geocoder.git",
-                "reference": "master"
-            },
-            "type": "library",
-            "time": "2013-09-18 17:47:11"
-        },
         {
             "name": "mustache/mustache",
             "version": "v2.4.1",

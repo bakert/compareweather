@@ -9,22 +9,7 @@
         }
     ],
     "minimum-stability": "dev",
-    "repositories": [
-        {
-            "type": "package",
-            "package": {
-                "name": "bakert/geocoder",
-                "version": "master",
-                "source": {
-                    "url": "git://github.com/bakert/geocoder.git",
-                    "type": "git",
-                    "reference": "master"
-                }
-            }
-        }
-    ],
     "require": {
-        "bakert/geocoder": "master",
         "mustache/mustache": "~2.1"
     }
 }
