@@ -1,0 +1,16 @@
+
+CREATE DATABASE compareweather;
+
+USE compareweather;
+
+GRANT ALL ON compareweather.* TO compareweather@localhost IDENTIFIED BY '<PASSWORD>';
+
+CREATE TABLE weather (
+    weather_id INT PRIMARY KEY AUTO_INCREMENT UNIQUE NOT NULL,
+    `date` DATETIME NOT NULL,
+    latitude NVARCHAR(255) NOT NULL,
+    longitude NVARCHAR(255) NOT NULL,
+    icon VARCHAR(64) NOT NULL,
+    temperature NVARCHAR(8) NOT NULL,
+    UNIQUE (`date`, longitude, latitude)
+) Engine = InnoDB  DEFAULT CHARSET=UTF8;
