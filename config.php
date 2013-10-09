@@ -27,11 +27,16 @@ class Config {
         if (!isset(static::$config)) {
             static::init();
         }
-        if (isset(static::$config[$name])) {
-            return static::$config[$name];
+        $key = static::camelToDotSeparated($name);
+        if (isset(static::$config[$key])) {
+            return static::$config[$key];
         } else {
             return null;
         }
+    }
+
+    protected static function camelToDotSeparated($s) {
+        return strtolower(preg_replace('/([a-z])([A-Z])/', '$1.$2', $s));
     }
 }
 
