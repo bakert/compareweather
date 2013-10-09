@@ -24,7 +24,8 @@
         }
     ],
     "require": {
-        "bakert/geocoder": "master"
+        "bakert/geocoder": "master",
+        "mustache/mustache": "~2.1"
     }
 }
 
