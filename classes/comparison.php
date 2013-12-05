@@ -21,7 +21,7 @@ class Comparison {
                 'side' => $side,
                 'name' => $location->name(),
                 'icon' => $location->icon(),
-                'temperature' => $location->temperature(),
+                'temperature' => round($location->temperature()),
             ];
             $args["location{$n}Html"] = $templateEngine->render('location', $locationArgs);
             $side = 'right';
